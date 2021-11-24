@@ -8,12 +8,13 @@ It should look like this:
 Sam Harris => S.H
 
 patrick feeney => P.F
-*/ function abbrevName(
-  name
-) {
+*/
+function abbrevName(name) {
   let surname = name.indexOf(' ')
   return (name.charAt(0) + '.' + name.charAt(surname + 1)).toUpperCase()
 }
+
+//--------//
 function abbrevName(name) {
   var nameArray = name.split(' ')
   return (nameArray[0][0] + '.' + nameArray[1][0]).toUpperCase()
