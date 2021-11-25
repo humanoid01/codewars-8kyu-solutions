@@ -16,10 +16,10 @@ Output: "Oi! Sheep number 1! You are about to be eaten by a wolf!"
 Input: ["sheep", "sheep", "wolf"]
 Output: "Pls go away and stop eating my sheep"
 */
-unction warnTheSheep(queue) {
-let wolf_pos = queue.reverse().indexOf('wolf')
-if(wolf_pos==0){
-  return "Pls go away and stop eating my sheep"
-}else
-return  `Oi! Sheep number ${wolf_pos}! You are about to be eaten by a wolf!`
+function warnTheSheep(queue) {
+  let wolf_pos = queue.reverse().indexOf('wolf')
+  if (wolf_pos == 0) {
+    return 'Pls go away and stop eating my sheep'
+  } else
+    return `Oi! Sheep number ${wolf_pos}! You are about to be eaten by a wolf!`
 }

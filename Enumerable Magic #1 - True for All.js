@@ -15,14 +15,12 @@ Here's a (Ruby) resource if you get stuck:
 http://www.rubycuts.com/enum-all
 */
 
-function all( arr, fun ){
-return arr.every(fun)
+function all(arr, fun) {
+  return arr.every(fun)
 }
 //---------------------------------------//
-function all(arr, fun)
-{
-  for (var i=0; i<arr.length; i++)
-    if (!fun(arr[i]))
-      return false;
-  
-  return true;
+function all(arr, fun) {
+  for (var i = 0; i < arr.length; i++) if (!fun(arr[i])) return false
+
+  return true
+}
