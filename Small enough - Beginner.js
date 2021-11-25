@@ -3,6 +3,7 @@ You will be given an array and a limit value. You must check that all values in 
 
 You can assume all values in the array are numbers.
 */
+
 function smallEnough(a, limit) {
   return Math.max(...a) <= limit
 }
